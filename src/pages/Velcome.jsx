@@ -34,26 +34,26 @@ const Velcome = () => {
                 <div className="flex justify-center pt-20">
                     <h2 className="text-white font-serif text-center text-lg md:text-2xl font-bold">Мы транслируем все топовые спортивные телеканалы</h2>
                 </div>
-                <div className="flex justify-center mt-10">
-                    <div className='p-3 bg-[#0f2d564d] mx-3'>
+                <div className="flex justify-center flex-wrap mt-10">
+                    <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
                         <img
                             className="w-full lg:w-[150px]"
                             src={mtv}
                             alt="logo" />
                     </div>
-                    <div className='p-3 bg-[#0f2d564d] mx-3'>
+                    <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
                         <img
                             className="w-full lg:w-[150px]"
                             src={setanta}
                             alt="logo" />
                     </div>
-                    <div className='p-3 bg-[#0f2d564d] mx-3'>
+                    <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
                         <img
                             className="w-full lg:w-[150px]"
                             src={m1}
                             alt="logo" />
                     </div>
-                    <div className='p-3 bg-[#0f2d564d] mx-3'>
+                    <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
                         <img
                             className="w-full lg:w-[150px]"
                             src={megogo}

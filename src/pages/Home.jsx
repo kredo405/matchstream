@@ -57,112 +57,112 @@ const Home = () => {
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч ТВ' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
-                            <img className="w-8/12" src={matchTv} alt="матч ТВ" />
+                            <img className="w-full" src={matchTv} alt="матч ТВ" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч футбол 1' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={match1} alt="Матч футбол 1" />
+                            <img className="w-full" src={match1} alt="Матч футбол 1" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Setanta' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={setanta1} alt="Setanta" />
+                            <img className="w-full" src={setanta1} alt="Setanta" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч футбол 2' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={match2} alt="Матч футбол 2" />
+                            <img className="w-full" src={match2} alt="Матч футбол 2" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч футбол 3' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={match3} alt="Матч футбол 3" />
+                            <img className="w-full" src={match3} alt="Матч футбол 3" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч премьер' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={matchPremier} alt="Матч премьер" />
+                            <img className="w-full" src={matchPremier} alt="Матч премьер" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч игра' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={matchGame} alt="Матч игра" />
+                            <img className="w-full" src={matchGame} alt="Матч игра" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч арена' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={matchArena} alt="Матч арена" />
+                            <img className="w-full" src={matchArena} alt="Матч арена" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч страна' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={matchCountry} alt="Матч страна" />
+                            <img className="w-full" src={matchCountry} alt="Матч страна" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Матч боец' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={matchBoec} alt="Матч боец" />
+                            <img className="w-full" src={matchBoec} alt="Матч боец" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Беларусь 5' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={belarus5} alt="Беларусь 5" />
+                            <img className="w-full" src={belarus5} alt="Беларусь 5" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Setanta sport 1' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={setanta1} alt="Setanta sport 1" />
+                            <img className="w-full" src={setanta1} alt="Setanta sport 1" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Setanta sport 2' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={setanta2} alt="Setanta sport 2" />
+                            <img className="w-full" src={setanta2} alt="Setanta sport 2" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Setanta sport +' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={setantalus} alt="Setanta sport +" />
+                            <img className="w-full" src={setantalus} alt="Setanta sport +" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'KHL prime' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={khlprime} alt="KHL prime" />
+                            <img className="w-full" src={khlprime} alt="KHL prime" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'KHL' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={khl} alt="KHL" />
+                            <img className="w-full" src={khl} alt="KHL" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Eurosport 1' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={eurosport1} alt="Eurosport 1" />
+                            <img className="w-full" src={eurosport1} alt="Eurosport 1" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Eurosport 2' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={eurosport2} alt="Eurosport 2" />
+                            <img className="w-full" src={eurosport2} alt="Eurosport 2" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Sport 1' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={sport1} alt="Sport 1" />
+                            <img className="w-full" src={sport1} alt="Sport 1" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Sport 2' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={sport2} alt="Sport 2" />
+                            <img className="w-full" src={sport2} alt="Sport 2" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Qazsport' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={qazsport} alt="Qazsport" />
+                            <img className="w-full" src={qazsport} alt="Qazsport" />
                         </div>
                         <div
                             onClick={() => { dispatch({ type: 'MATCH', payload: 'Visat sport' }); history('/match') }}
                             className="w-36 lg:w-96 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
-                            <img className="w-8/12" src={visat} alt="Visat sport" />
+                            <img className="w-full" src={visat} alt="Visat sport" />
                         </div>
                     </div>
                 </div>
