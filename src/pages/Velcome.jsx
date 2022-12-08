@@ -33,7 +33,7 @@ const Velcome = () => {
                 <div className="flex justify-center pt-18">
                     <h1 className="text-white text-center font-serif text-2xl md:text-4xl lg:text-6xl font-bold">Бесплатные сортивные трансляции</h1>
                 </div>
-                <div className="flex justify-center pt-20">
+                <div className="flex justify-center pt-20 px-2">
                     <h2 className="text-white font-serif text-center text-lg md:text-2xl font-bold">Мы транслируем все топовые спортивные телеканалы</h2>
                 </div>
                 <div className="flex justify-center flex-wrap mt-10">
