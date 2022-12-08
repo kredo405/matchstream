@@ -1,7 +1,8 @@
-import mtv from '../assets/m.png'
-import m1 from '../assets/1m.png'
-import setanta from '../assets/8.png'
-import megogo from '../assets/meg1.png'
+import mtv from '../assets/m.png';
+import m1 from '../assets/1m.png';
+import setanta from '../assets/8.png';
+import megogo from '../assets/meg1.png';
+import icon from '../assets/icon.png';
 import { useNavigate } from "react-router-dom";
 
 const Velcome = () => {
@@ -14,10 +15,11 @@ const Velcome = () => {
     return (
         <>
 
-            <div className="container w-full h-screen">
-                <nav className="flex justify-between items-center p-10">
-                    <div>
-                        <span className="text-white font-mono">MATCHSTREAM</span>
+            <div className="container pb-10 w-full h-screen">
+                <nav className="flex justify-between items-center px-3 p-10">
+                    <div className='flex items-center'>
+                        <img src={icon} alt="icon" />
+                        <span className="text-white font-mono text-2xl">MATCHSTREAM</span>
                     </div>
                     <div className="">
                         <button
@@ -60,10 +62,10 @@ const Velcome = () => {
                             alt="logo" />
                     </div>
                 </div>
-                <div className="flex justify-center pt-14">
+                <div className="flex justify-center pt-10">
                     <h2 className="text-white font-serif text-center text-xl lg:text-2xl font-bold">Не пропустите матчи любимых команд</h2>
                 </div>
-                <div className="flex justify-center mt-12">
+                <div className="flex justify-center mt-5">
                     <button
                         onClick={handlleClick}
                         className="w-40 h-10 md:w-60 md:h-16 bg-[#F4C038] border-2 rounded-3xl border-amber-400 border-solid text-2xl font-bold"
@@ -71,6 +73,8 @@ const Velcome = () => {
                         Войти
                     </button>
                 </div>
+                <footer className='w-full h-5'>
+                </footer>
             </div>
 
         </>

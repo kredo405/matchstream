@@ -1,33 +1,32 @@
-import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import matchTv from '../assets/m.png'
-import match1 from '../assets/1m.png'
-import match2 from '../assets/2m.png'
-import match3 from '../assets/3m.png'
-import matchPremier from '../assets/5m.png'
-import matchGame from '../assets/18.png'
-import matchArena from '../assets/19.png'
-import matchCountry from '../assets/20.png'
-import matchBoec from '../assets/21.png'
-import belarus5 from '../assets/b5.png'
-import megogo1 from '../assets/meg1.png'
-import megogo2 from '../assets/meg2.png'
-import megogo3 from '../assets/meg3.png'
-import setanta from '../assets/8.png'
-import setanta1 from '../assets/26.png'
-import setanta2 from '../assets/27.png'
-import setantalus from '../assets/9.png'
-import khlprime from '../assets/16.png'
-import khl from '../assets/17.png'
-import footbol from '../assets/22.png'
-import eurosport1 from '../assets/23.png'
-import eurosport2 from '../assets/24.png'
-import sport1 from '../assets/25.png'
-import sport2 from '../assets/33.png'
-import qazsport from '../assets/32.png'
-import visat from '../assets/34.png'
-import qsport from '../assets/35.png'
+import matchTv from '../assets/m.png';
+import match1 from '../assets/1m.png';
+import match2 from '../assets/2m.png';
+import match3 from '../assets/3m.png';
+import matchPremier from '../assets/5m.png';
+import matchGame from '../assets/18.png';
+import matchArena from '../assets/19.png';
+import matchCountry from '../assets/20.png';
+import matchBoec from '../assets/21.png';
+import belarus5 from '../assets/b5.png';
+import megogo1 from '../assets/meg1.png';
+import megogo2 from '../assets/meg2.png';
+import megogo3 from '../assets/meg3.png';
+import setanta from '../assets/8.png';
+import setanta1 from '../assets/26.png';
+import setanta2 from '../assets/27.png';
+import setantalus from '../assets/9.png';
+import khlprime from '../assets/16.png';
+import khl from '../assets/17.png';
+import eurosport1 from '../assets/23.png';
+import eurosport2 from '../assets/24.png';
+import sport1 from '../assets/25.png';
+import sport2 from '../assets/33.png';
+import qazsport from '../assets/32.png';
+import visat from '../assets/34.png';
+import qsport from '../assets/35.png';
+import icon from '../assets/icon.png';
 
 
 const Home = () => {
@@ -37,16 +36,10 @@ const Home = () => {
     return (
         <>
             <div className="container">
-                <nav className="flex justify-between items-center px-10 py-3">
-                    <div>
-                        <span className="text-white font-mono">MATCHSTREAM</span>
-                    </div>
-                    <div>
-                        <button
-                            className="p-2 lg:p-3 bg-[#F4C038] text-sm lg:text-base border-2 rounded-lg rounded-3xl border-amber-400 border-solid font-bold"
-                        >
-                            Поддержать проект
-                        </button>
+                <nav className="flex justify-between items-center px-3 py-3">
+                    <div className='flex items-center'>
+                        <img src={icon} alt="icon" />
+                        <span className="text-white font-mono text-2xl">MATCHSTREAM</span>
                     </div>
                 </nav>
                 <div>

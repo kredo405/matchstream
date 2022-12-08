@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ReactPlayer from 'react-player/lazy';
+import icon from '../assets/icon.png'
 
 const Match = () => {
     const state = useSelector(state => state);
@@ -83,16 +84,10 @@ const Match = () => {
     return (
         <>
             <div className="container">
-                <nav className="flex justify-between items-center px-10 py-3">
-                    <div>
-                        <span className="text-white font-mono">MATCHSTREAM</span>
-                    </div>
-                    <div>
-                        <button
-                            className="p-2 lg:p-3 bg-[#F4C038] text-sm lg:text-base border-2 rounded-lg lg:rounded-3xl border-amber-400 border-solid font-bold"
-                        >
-                            Поддержать проект
-                        </button>
+                <nav className="flex justify-between items-center px-3 py-3">
+                    <div className='flex items-center'>
+                        <img src={icon} alt="icon" />
+                        <span className="text-white font-mono text-2xl">MATCHSTREAM</span>
                     </div>
                 </nav>
                 <div className="mt-10">
