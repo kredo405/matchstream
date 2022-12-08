@@ -24,14 +24,14 @@ const Velcome = () => {
                     <div className="">
                         <button
                             onClick={handlleClick}
-                            className="w-24 h-10 bg-[#F4C038] border-2 rounded-3xl border-amber-400 border-solid font-bold"
+                            className="w-24 h-10 hover:bg-[#dea619] bg-[#F4C038] border-2 rounded-3xl border-amber-400 border-solid font-bold"
                         >
-                            Войти
+                            Смотреть
                         </button>
                     </div>
                 </nav>
                 <div className="flex justify-center pt-18">
-                    <h1 className="text-white text-center font-serif text-2xl md:text-4xl lg:text-6xl font-bold">Бесплатные сортивные трансляции</h1>
+                    <h1 className="text-white text-center font-serif text-2xl md:text-5xl font-bold">Бесплатные сортивные трансляции</h1>
                 </div>
                 <div className="flex justify-center pt-20 px-2">
                     <h2 className="text-white font-serif text-center text-lg md:text-2xl font-bold">Мы транслируем все топовые спортивные телеканалы</h2>
@@ -68,9 +68,9 @@ const Velcome = () => {
                 <div className="flex justify-center mt-5">
                     <button
                         onClick={handlleClick}
-                        className="w-40 h-10 md:w-60 md:h-16 bg-[#F4C038] border-2 rounded-3xl border-amber-400 border-solid text-2xl font-bold"
+                        className="w-40 h-10 md:w-60 md:h-16 hover:bg-[#dea619] bg-[#F4C038] border-2 rounded-3xl border-amber-400 border-solid text-xl md:text-2xl font-bold"
                     >
-                        Войти
+                        Смотреть
                     </button>
                 </div>
                 <footer className='w-full h-5'>
