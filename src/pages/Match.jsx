@@ -21,7 +21,7 @@ const Match = () => {
                 <nav className="flex justify-between items-center px-3 py-3">
                     <div className='flex items-center'>
                         <img src={icon} alt="icon" />
-                        <span className="text-white font-mono text-2xl">MATCHSTREAM</span>
+                        <span className="text-white font-mono text-2xl">LIVESTREAM</span>
                     </div>
                 </nav>
                 <div className="mt-10">
