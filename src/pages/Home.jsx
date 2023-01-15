@@ -17,19 +17,9 @@ const Home = () => {
     const [value, setValue] = useState(0);
     const [Channels, setChannels] = useState(<AllChannels />)
 
-    function handlleClickAll() {
-        setChannels(<AllChannels />)
+    function handlleClick(channel) {
+        setChannels(channel)
     }
-    function handlleClickSports() {
-        setChannels(<SportChannels />)
-    }
-    function handlleClickFilms() {
-        setChannels(<FilmsChannels />)
-    }
-    function handlleClickOther() {
-        setChannels(<OtherChannels />)
-    }
-
 
     return (
         <>
@@ -54,10 +44,10 @@ const Home = () => {
                                     setValue(newValue);
                                 }}
                             >
-                                <BottomNavigationAction onClick={handlleClickAll} label="Все" sx={{ color: 'white' }} icon={<CameraIcon />} />
-                                <BottomNavigationAction onClick={handlleClickSports} label="Спортивные" sx={{ color: 'white' }} icon={<SportsSoccerIcon />} />
-                                <BottomNavigationAction onClick={handlleClickFilms} label="Фильмы" sx={{ color: 'white' }} icon={<EmergencyRecordingIcon />} />
-                                <BottomNavigationAction onClick={handlleClickOther} label="Разные" sx={{ color: 'white' }} icon={<CatchingPokemonOutlinedIcon />} />
+                                <BottomNavigationAction onClick={() => handlleClick(<AllChannels />)} label="Все" sx={{ color: 'white' }} icon={<CameraIcon />} />
+                                <BottomNavigationAction onClick={() => handlleClick(<SportChannels />)} label="Спортивные" sx={{ color: 'white' }} icon={<SportsSoccerIcon />} />
+                                <BottomNavigationAction onClick={() => handlleClick(<FilmsChannels />)} label="Фильмы" sx={{ color: 'white' }} icon={<EmergencyRecordingIcon />} />
+                                <BottomNavigationAction onClick={() => handlleClick(<OtherChannels />)} label="Разные" sx={{ color: 'white' }} icon={<CatchingPokemonOutlinedIcon />} />
 
                             </BottomNavigation>
                         </Box>
