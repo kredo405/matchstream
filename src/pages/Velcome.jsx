@@ -18,7 +18,7 @@ const Velcome = () => {
                 <nav className="flex justify-between items-center px-3 p-10">
                     <div className='flex items-center'>
                         <img src={icon} alt="icon" />
-                        <span className="text-white font-mono text-2xl">MATCHSTREAM</span>
+                        <span className="text-white font-mono text-2xl">LIVESTREAM</span>
                     </div>
                     <div className="">
                         <button
@@ -30,10 +30,10 @@ const Velcome = () => {
                     </div>
                 </nav>
                 <div className="flex justify-center pt-18">
-                    <h1 className="text-white text-center font-serif text-2xl md:text-5xl font-bold">Бесплатные сортивные трансляции</h1>
+                    <h1 className="text-white text-center font-serif text-2xl md:text-5xl font-bold">Бесплатные тв трансляции</h1>
                 </div>
                 <div className="flex justify-center pt-20 px-2">
-                    <h2 className="text-white font-serif text-center text-lg md:text-2xl font-bold">Мы транслируем все топовые спортивные телеканалы</h2>
+                    <h2 className="text-white font-serif text-center text-lg md:text-2xl font-bold">Мы транслируем все топовые телеканалы</h2>
                 </div>
                 <div className="flex justify-center flex-wrap mt-10">
                     <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
@@ -51,18 +51,15 @@ const Velcome = () => {
                     <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
                         <img
                             className="w-full lg:w-[150px]"
-                            src={m1}
+                            src='https://picon.ml/kinoxit.png'
                             alt="logo" />
                     </div>
                     <div className='w-5/12 lg:w-[250px] p-3 bg-[#0f2d564d] m-3 flex justify-center items-center'>
                         <img
                             className="w-full lg:w-[150px]"
-                            src={megogo}
+                            src='https://static.tnt-online.ru/images/tnt_logo_new1.png?v=1'
                             alt="logo" />
                     </div>
-                </div>
-                <div className="flex justify-center pt-10">
-                    <h2 className="text-white font-serif text-center text-xl lg:text-2xl font-bold">Не пропустите матчи любимых команд</h2>
                 </div>
                 <div className="flex justify-center mt-5">
                     <button

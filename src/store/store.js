@@ -1,6 +1,9 @@
 import { createStore } from 'redux';
 const initialState = {
-    channel: ''
+    channel: {
+        name: '',
+        url: ''
+    },
 }
 
 const reducer = (state = initialState, action) => {
