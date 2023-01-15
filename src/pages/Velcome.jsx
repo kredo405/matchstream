@@ -14,7 +14,6 @@ const Velcome = () => {
 
     return (
         <>
-
             <div className="container pb-10 w-full h-screen">
                 <nav className="flex justify-between items-center px-3 p-10">
                     <div className='flex items-center'>
