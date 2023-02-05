@@ -1,4 +1,4 @@
-import { createStore } from 'redux';
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 const initialState = {
     channel: {
         name: '',
@@ -6,16 +6,18 @@ const initialState = {
     },
 }
 
-const reducer = (state = initialState, action) => {
-    switch (action.type) {
-        case 'MATCH':
-            return {
-                ...state,
-                channel: action.payload
-            };  
-        default:
-            return state;
+const channelsSlice = createSlice({
+    name: 'channels',
+    initialState,
+    reducers: {
+        channel(state, action) {
+            state.channel = action.payload;
+        }
     }
-}
+})
 
-export const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+export const { channel } = channelsSlice.actions;
+export const store = configureStore({
+    reducer: channelsSlice.reducer,
+    devTools: true
+});

@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { channel } from "../store/store";
 import matchTv from '../assets/m.png';
 import match1 from '../assets/1m.png';
 import match2 from '../assets/2m.png';
@@ -19,7 +20,6 @@ import eurosport1 from '../assets/23.png';
 import eurosport2 from '../assets/24.png';
 import sport1 from '../assets/25.png';
 import sport2 from '../assets/33.png';
-import visat from '../assets/34.png';
 
 export const SportChannels = () => {
     const history = useNavigate();
@@ -29,14 +29,10 @@ export const SportChannels = () => {
         <>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч ТВ',
-                            url: 'https://est3.varcdn.top/match/tracks-v1a1/mono.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Матч ТВ',
+                        url: 'https://est3.varcdn.top/match/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -44,13 +40,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч футбол 1',
-                            url: 'https://est7.varcdn.top/m1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч футбол 1',
+                        url: 'https://est7.varcdn.top/m1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -58,27 +51,20 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta',
-                            url: 'https://est7.varcdn.top/setantasport/tracks-v1a1/mono.m3u8'
-                        }
-                    });
-                    history('/match')
+                    dispatch(channel({
+                        name: 'Setanta',
+                        url: 'https://est7.varcdn.top/setantasport/tracks-v1a1/mono.m3u8'
+                    })); history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
                 <img className="w-full" src={setanta1} alt="Setanta" />
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч футбол 2',
-                            url: 'https://est7.varcdn.top/m2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч футбол 2',
+                        url: 'https://est7.varcdn.top/m2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -86,13 +72,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч футбол 3',
-                            url: 'https://est3.varcdn.top/m3/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч футбол 3',
+                        url: 'https://est3.varcdn.top/m3/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -100,13 +83,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'OKKO спорт',
-                            url: 'https://est1.varcdn.top/1tv/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'OKKO спорт',
+                        url: 'https://est1.varcdn.top/1tv/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -114,13 +94,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч премьер',
-                            url: 'https://est7.varcdn.top/mp/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч премьер',
+                        url: 'https://est7.varcdn.top/mp/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -128,13 +105,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч игра',
-                            url: 'https://est7.varcdn.top/matchigra/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч игра',
+                        url: 'https://est7.varcdn.top/matchigra/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -142,13 +116,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч арена',
-                            url: 'https://est1.varcdn.top/marena/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч арена',
+                        url: 'https://est1.varcdn.top/marena/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -156,13 +127,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч страна',
-                            url: 'https://est1.varcdn.top/matchstrana/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч страна',
+                        url: 'https://est1.varcdn.top/matchstrana/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -170,13 +138,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч боец',
-                            url: 'https://est1.varcdn.top/matchboec/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч боец',
+                        url: 'https://est1.varcdn.top/matchboec/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -184,13 +149,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Беларусь 5',
-                            url: 'https://est1.varcdn.top/b5/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Беларусь 5',
+                        url: 'https://est1.varcdn.top/b5/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -198,13 +160,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta sport 1',
-                            url: 'https://est1.varcdn.top/setanta1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta sport 1',
+                        url: 'https://est1.varcdn.top/setanta1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -212,13 +171,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta sport 2',
-                            url: 'https://est7.varcdn.top/setanta2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta sport 2',
+                        url: 'https://est7.varcdn.top/setanta2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -226,13 +182,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta sport +',
-                            url: 'https://est1.varcdn.top/setantaplusukraina/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta sport +',
+                        url: 'https://est1.varcdn.top/setantaplusukraina/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -240,13 +193,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'KHL prime',
-                            url: 'https://est3.varcdn.top/khlHD/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'KHL prime',
+                        url: 'https://est3.varcdn.top/khlHD/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -254,26 +204,21 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'KHL',
-                            url: 'https://est1.varcdn.top/khl/tracks-v1a1/mono.m3u8'
-                        }
-                    }); history('/match')
+                    dispatch(channel({
+                        name: 'KHL',
+                        url: 'https://est1.varcdn.top/khl/tracks-v1a1/mono.m3u8'
+                    }));
+                    history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
                 <img className="w-full" src={khl} alt="KHL" />
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Eurosport 1',
-                            url: 'https://est7.varcdn.top/Eurosport1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Eurosport 1',
+                        url: 'https://est7.varcdn.top/Eurosport1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -281,13 +226,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Eurosport 2',
-                            url: 'https://est3.varcdn.top/Eurosport2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Eurosport 2',
+                        url: 'https://est3.varcdn.top/Eurosport2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -295,13 +237,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Sport 1',
-                            url: 'https://est1.varcdn.top/sport1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Sport 1',
+                        url: 'https://est1.varcdn.top/sport1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -309,13 +248,10 @@ export const SportChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Sport 2',
-                            url: 'https://est3.varcdn.top/sport2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Sport 2',
+                        url: 'https://est3.varcdn.top/sport2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">

@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { channel } from "../store/store";
 
 export const OtherChannels = () => {
     const history = useNavigate();
@@ -9,14 +10,10 @@ export const OtherChannels = () => {
         <>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'А2',
-                            url: 'https://sc.id-tv.kz/A2_36_37.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'А2',
+                        url: 'https://sc.id-tv.kz/A2_36_37.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -24,14 +21,10 @@ export const OtherChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'ТНТ 4',
-                            url: 'https://sc.id-tv.kz:443/tnt4_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'ТНТ 4',
+                        url: 'https://sc.id-tv.kz:443/tnt4_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -39,14 +32,10 @@ export const OtherChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'СТС',
-                            url: 'https://sc.id-tv.kz/STS_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'СТС',
+                        url: 'https://sc.id-tv.kz/STS_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -54,14 +43,10 @@ export const OtherChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Новое Радио ТВ',
-                            url: 'http://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Новое Радио ТВ',
+                        url: 'http://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -69,14 +54,10 @@ export const OtherChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Factoria TV HD',
-                            url: 'https://eu1.servers10.com:8081/8010/index.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Factoria TV HD',
+                        url: 'https://eu1.servers10.com:8081/8010/index.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -84,14 +65,10 @@ export const OtherChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'THT Music',
-                            url: 'https://sc.id-tv.kz:443/TNTMusic_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'THT Music',
+                        url: 'https://sc.id-tv.kz:443/TNTMusic_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">

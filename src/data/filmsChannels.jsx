@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { channel } from "../store/store";
 
 export const FilmsChannels = () => {
     const history = useNavigate();
@@ -9,14 +10,10 @@ export const FilmsChannels = () => {
         <>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Кинохит',
-                            url: 'https://sc.id-tv.kz/Kinohit_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Кинохит',
+                        url: 'https://sc.id-tv.kz/Kinohit_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -24,14 +21,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киномикс HD',
-                            url: 'https://sc.id-tv.kz/Kinomix_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киномикс HD',
+                        url: 'https://sc.id-tv.kz/Kinomix_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -39,14 +32,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Cinema',
-                            url: 'https://sc.id-tv.kz:443/Cinema_36_37.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Cinema',
+                        url: 'https://sc.id-tv.kz:443/Cinema_36_37.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -54,14 +43,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Кинопремьера',
-                            url: 'https://sc.id-tv.kz/Kinopremiera_hd_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Кинопремьера',
+                        url: 'https://sc.id-tv.kz/Kinopremiera_hd_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -69,14 +54,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киносемья',
-                            url: 'https://sc.id-tv.kz/Kinosemiya_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киносемья',
+                        url: 'https://sc.id-tv.kz/Kinosemiya_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -84,14 +65,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киносвидание',
-                            url: 'https://sc.id-tv.kz/Kinosvidanie_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киносвидание',
+                        url: 'https://sc.id-tv.kz/Kinosvidanie_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -99,14 +76,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Мужское кино',
-                            url: 'https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Мужское кино',
+                        url: 'https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -114,14 +87,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киносерия',
-                            url: 'https://sc.id-tv.kz/Kinoseriya_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киносерия',
+                        url: 'https://sc.id-tv.kz/Kinoseriya_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -129,14 +98,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'NST',
-                            url: 'https://sc.id-tv.kz/NSTV_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'NST',
+                        url: 'https://sc.id-tv.kz/NSTV_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -144,14 +109,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Kino Watch-СВЕЖАКИ',
-                            url: 'https://edge-01.kino.watch/fresh/index.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Kino Watch-СВЕЖАКИ',
+                        url: 'https://edge-01.kino.watch/fresh/index.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -159,14 +120,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Kino Watch-Хит',
-                            url: 'https://edge-01.kino.watch/hit/index.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Kino Watch-Хит',
+                        url: 'https://edge-01.kino.watch/hit/index.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -174,14 +131,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Amedia Hit',
-                            url: 'https://sc.id-tv.kz/amedia_hit_hd_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Amedia Hit',
+                        url: 'https://sc.id-tv.kz/amedia_hit_hd_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -189,14 +142,10 @@ export const FilmsChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Дом кино',
-                            url: 'https://sc.id-tv.kz:443/DomKino_36_37.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Дом кино',
+                        url: 'https://sc.id-tv.kz:443/DomKino_36_37.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">

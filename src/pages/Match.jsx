@@ -1,16 +1,15 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ReactPlayer from 'react-player/lazy';
 import icon from '../assets/icon.png'
 
 const Match = () => {
-    const state = useSelector(state => state);
+    const { channel } = useSelector(state => state);
     const history = useNavigate();
-    const [channel, setChannel] = useState('');
 
     useEffect(() => {
-        if (state.channel === '') {
+        if (channel === '') {
             history('/home');
         }
     }, [])
@@ -26,11 +25,11 @@ const Match = () => {
                 </nav>
                 <div className="mt-10">
                     <div className="flex justify-center">
-                        <h1 className="text-white text-center font-sans text-5xl font-bold">{state.channel.name}</h1>
+                        <h1 className="text-white text-center font-sans text-5xl font-bold">{channel.name}</h1>
                     </div>
                     <div className="flex justify-center mt-10 px-2">
                         <ReactPlayer
-                            url={state.channel.url}
+                            url={channel.url}
                             playing={true}
                             controls={true}
                             volume={1}

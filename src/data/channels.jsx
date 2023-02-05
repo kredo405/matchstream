@@ -19,7 +19,7 @@ import eurosport1 from '../assets/23.png';
 import eurosport2 from '../assets/24.png';
 import sport1 from '../assets/25.png';
 import sport2 from '../assets/33.png';
-import visat from '../assets/34.png';
+import { channel } from "../store/store";
 
 export const AllChannels = () => {
     const history = useNavigate();
@@ -29,14 +29,10 @@ export const AllChannels = () => {
         <>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Кинохит',
-                            url: 'https://sc.id-tv.kz/Kinohit_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Кинохит',
+                        url: 'https://sc.id-tv.kz/Kinohit_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -44,14 +40,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киномикс HD',
-                            url: 'https://sc.id-tv.kz/Kinomix_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киномикс HD',
+                        url: 'https://sc.id-tv.kz/Kinomix_hd.m3u8'
+                    }))
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -59,14 +51,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Cinema',
-                            url: 'https://sc.id-tv.kz:443/Cinema_36_37.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Cinema',
+                        url: 'https://sc.id-tv.kz:443/Cinema_36_37.m3u8'
+                    }))
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -74,14 +62,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Кинопремьера',
-                            url: 'https://sc.id-tv.kz/Kinopremiera_hd_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Кинопремьера',
+                        url: 'https://sc.id-tv.kz/Kinopremiera_hd_34_35.m3u8'
+                    }))
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -89,14 +73,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киносемья',
-                            url: 'https://sc.id-tv.kz/Kinosemiya_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киносемья',
+                        url: 'https://sc.id-tv.kz/Kinosemiya_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -104,14 +84,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киносвидание',
-                            url: 'https://sc.id-tv.kz/Kinosvidanie_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киносвидание',
+                        url: 'https://sc.id-tv.kz/Kinosvidanie_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -119,14 +95,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Мужское кино',
-                            url: 'https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Мужское кино',
+                        url: 'https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -134,14 +106,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч ТВ',
-                            url: 'https://est3.varcdn.top/match/tracks-v1a1/mono.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Матч ТВ',
+                        url: 'https://est3.varcdn.top/match/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -149,13 +117,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч футбол 1',
-                            url: 'https://est7.varcdn.top/m1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч футбол 1',
+                        url: 'https://est7.varcdn.top/m1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -163,13 +128,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta',
-                            url: 'https://est7.varcdn.top/setantasport/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta',
+                        url: 'https://est7.varcdn.top/setantasport/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -177,13 +139,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч футбол 2',
-                            url: 'https://est7.varcdn.top/m2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч футбол 2',
+                        url: 'https://est7.varcdn.top/m2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -191,13 +150,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч футбол 3',
-                            url: 'https://est3.varcdn.top/m3/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч футбол 3',
+                        url: 'https://est3.varcdn.top/m3/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -205,13 +161,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'OKKO спорт',
-                            url: 'https://est1.varcdn.top/1tv/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'OKKO спорт',
+                        url: 'https://est1.varcdn.top/1tv/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -219,13 +172,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч премьер',
-                            url: 'https://est7.varcdn.top/mp/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч премьер',
+                        url: 'https://est7.varcdn.top/mp/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -233,13 +183,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч игра',
-                            url: 'https://est7.varcdn.top/matchigra/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч игра',
+                        url: 'https://est7.varcdn.top/matchigra/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -247,13 +194,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч арена',
-                            url: 'https://est1.varcdn.top/marena/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч арена',
+                        url: 'https://est1.varcdn.top/marena/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -261,13 +205,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч страна',
-                            url: 'https://est1.varcdn.top/matchstrana/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч страна',
+                        url: 'https://est1.varcdn.top/matchstrana/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -275,13 +216,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Матч боец',
-                            url: 'https://est1.varcdn.top/matchboec/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Матч боец',
+                        url: 'https://est1.varcdn.top/matchboec/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -289,13 +227,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Беларусь 5',
-                            url: 'https://est1.varcdn.top/b5/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Беларусь 5',
+                        url: 'https://est1.varcdn.top/b5/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -303,13 +238,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta sport 1',
-                            url: 'https://est1.varcdn.top/setanta1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta sport 1',
+                        url: 'https://est1.varcdn.top/setanta1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -317,13 +249,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta sport 2',
-                            url: 'https://est7.varcdn.top/setanta2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta sport 2',
+                        url: 'https://est7.varcdn.top/setanta2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -331,13 +260,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Setanta sport +',
-                            url: 'https://est1.varcdn.top/setantaplusukraina/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Setanta sport +',
+                        url: 'https://est1.varcdn.top/setantaplusukraina/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -345,13 +271,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'KHL prime',
-                            url: 'https://est3.varcdn.top/khlHD/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'KHL prime',
+                        url: 'https://est3.varcdn.top/khlHD/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -359,26 +282,21 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'KHL',
-                            url: 'https://est1.varcdn.top/khl/tracks-v1a1/mono.m3u8'
-                        }
-                    }); history('/match')
+                    dispatch(channel({
+                        name: 'KHL',
+                        url: 'https://est1.varcdn.top/khl/tracks-v1a1/mono.m3u8'
+                    }));
+                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
                 <img className="w-full" src={khl} alt="KHL" />
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Eurosport 1',
-                            url: 'https://est7.varcdn.top/Eurosport1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Eurosport 1',
+                        url: 'https://est7.varcdn.top/Eurosport1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -386,13 +304,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Eurosport 2',
-                            url: 'https://est3.varcdn.top/Eurosport2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Eurosport 2',
+                        url: 'https://est3.varcdn.top/Eurosport2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -400,13 +315,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Sport 1',
-                            url: 'https://est1.varcdn.top/sport1/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Sport 1',
+                        url: 'https://est1.varcdn.top/sport1/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -414,13 +326,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Sport 2',
-                            url: 'https://est3.varcdn.top/sport2/tracks-v1a1/mono.m3u8'
-                        }
-                    });
+                    dispatch(channel({
+                        name: 'Sport 2',
+                        url: 'https://est3.varcdn.top/sport2/tracks-v1a1/mono.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3  flex justify-center items-center">
@@ -428,14 +337,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'А2',
-                            url: 'https://sc.id-tv.kz/A2_36_37.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'А2',
+                        url: 'https://sc.id-tv.kz/A2_36_37.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -443,14 +348,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'ТНТ 4',
-                            url: 'https://sc.id-tv.kz:443/tnt4_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'ТНТ 4',
+                        url: 'https://sc.id-tv.kz:443/tnt4_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -458,14 +359,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'СТС',
-                            url: 'https://sc.id-tv.kz/STS_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'СТС',
+                        url: 'https://sc.id-tv.kz/STS_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -473,14 +370,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Новое Радио ТВ',
-                            url: 'http://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Новое Радио ТВ',
+                        url: 'http://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -488,14 +381,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Factoria TV HD',
-                            url: 'https://eu1.servers10.com:8081/8010/index.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Factoria TV HD',
+                        url: 'https://eu1.servers10.com:8081/8010/index.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -503,14 +392,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'THT Music',
-                            url: 'https://sc.id-tv.kz:443/TNTMusic_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'THT Music',
+                        url: 'https://sc.id-tv.kz:443/TNTMusic_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -518,14 +403,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Киносерия',
-                            url: 'https://sc.id-tv.kz/Kinoseriya_hd.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Киносерия',
+                        url: 'https://sc.id-tv.kz/Kinoseriya_hd.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -533,14 +414,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'NST',
-                            url: 'https://sc.id-tv.kz/NSTV_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'NST',
+                        url: 'https://sc.id-tv.kz/NSTV_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -548,14 +425,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Kino Watch-СВЕЖАКИ',
-                            url: 'https://edge-01.kino.watch/fresh/index.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Kino Watch-СВЕЖАКИ',
+                        url: 'https://edge-01.kino.watch/fresh/index.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -563,14 +436,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Kino Watch-Хит',
-                            url: 'https://edge-01.kino.watch/hit/index.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Kino Watch-Хит',
+                        url: 'https://edge-01.kino.watch/hit/index.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -578,14 +447,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Amedia Hit',
-                            url: 'https://sc.id-tv.kz/amedia_hit_hd_34_35.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Amedia Hit',
+                        url: 'https://sc.id-tv.kz/amedia_hit_hd_34_35.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
@@ -593,14 +458,10 @@ export const AllChannels = () => {
             </div>
             <div
                 onClick={() => {
-                    dispatch({
-                        type: 'MATCH',
-                        payload: {
-                            name: 'Дом кино',
-                            url: 'https://sc.id-tv.kz:443/DomKino_36_37.m3u8'
-                        },
-
-                    });
+                    dispatch(channel({
+                        name: 'Дом кино',
+                        url: 'https://sc.id-tv.kz:443/DomKino_36_37.m3u8'
+                    }));
                     history('/match')
                 }}
                 className="w-36 h-36 lg:w-60 lg:h-60 p-3 hover:bg-[#3c659d59] bg-[#0f2d564d] m-3 flex justify-center items-center">
