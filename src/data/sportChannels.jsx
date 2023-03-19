@@ -151,7 +151,7 @@ export const SportChannels = () => {
                 onClick={() => {
                     dispatch(channel({
                         name: 'Беларусь 5',
-                        url: 'https://est1.varcdn.top/b5/tracks-v1a1/mono.m3u8'
+                        url: 'https://aws03.varcdn.top/b5/tracks-v1a1/mono.m3u8'
                     }));
                     history('/match')
                 }}
